@@ -14,6 +14,14 @@ input {
     border-color: gray;
 }
 
+body {
+    background-image: url(http://s1.picswalls.com/wallpapers/2015/09/27/star-wars-hd-background_102701144_273.jpg);
+}
+
+h1 {
+  color:white;
+}
+
 button {
     border-radius: 5px;
     border-width: 2px;
