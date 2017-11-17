@@ -17,9 +17,9 @@ form {
 
 input {
     border-radius: 5px;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    border-color: gray;
+    border-color: #111723;
 }
 
 body {
@@ -32,11 +32,11 @@ h1 {
 
 button {
     border-radius: 5px;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
-    color: gray;
+    color: #111723;
     background: white;
-    border-color: gray;
+    border-color: #111723;
 }
 
 button:hover {
