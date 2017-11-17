@@ -140,3 +140,10 @@ button:hover {
 .post .post-footer .comments-list .comment > .comments-list {
   margin-left: 50px;
 }
+
+.new-body-div {
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
