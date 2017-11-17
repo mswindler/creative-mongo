@@ -4,6 +4,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://cdn0.iconfinder.com/data/icons/star-wars-3/154/square-star-wars-hero-mask-512.png">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <link href="stylesheets/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
   <script src="javascripts/app.js"></script>
  
@@ -27,15 +28,26 @@
   </div>
  <div ng-repeat="comment in comments | orderBy: '-upvotes'"> 
     <div class="panel panel-white post panel-shadow"> 
-      <div class="post-heading"> 
-        {{comment.name}} 
+      <div class="post-heading">
+        <div class="pull-left image">
+          <img src="https://i.pinimg.com/736x/09/94/5f/09945fe83c94669cd0cfcddce4bae788--facebook-profile-avatar.jpg" class="img-circle avatar">
+        </div>
+        <div class="pull-left meta" style="margin-top:15px">
+          {{comment.name}} 
+        </div>
+        <div class="delete-button">
+          <button class="btn btn-default stat-item" ng-click="delete(comment)">
+          <span class="fa fa-trash-o icon" aria-hidden="true"></span></button>
+        </div>
       </div> 
       <div class="post-description"> 
-      
-      {{comment.title}} 
-      <span class="glyphicon glyphicon-trash" ng-click="delete(comment)"></span>
-      <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span> 
-       upvotes: {{comment.upvotes}} 
+      <p>
+        {{comment.title}} 
+      </p>
+      <div class="stats">
+        <a class="btn btn-default stat-item" ng-click="incrementUpvotes(comment)">
+        <span class="fa fa-thumbs-up icon" ng-click="incrementUpvotes(comment)"></span>{{comment.upvotes}} </a>
+      </div>
       </div> 
     </div> </div>
 </body>

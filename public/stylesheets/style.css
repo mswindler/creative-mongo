@@ -63,8 +63,8 @@ button:hover {
 }
 
 .post .post-heading {
-  height: 95px;
-  padding: 20px 15px;
+  height: 65px;
+  padding: 10px 15px;
   text-align:left;
 }
 .post .post-heading .avatar {
@@ -72,6 +72,10 @@ button:hover {
   height: 60px;
   display: block;
   margin-right: 15px;
+}
+
+.post .post-heading .delete-button{
+  text-align: right;
 }
 .post .post-heading .meta .title {
   margin-bottom: 0;
@@ -98,6 +102,7 @@ button:hover {
 }
 .post .post-description .stats {
   margin-top: 20px;
+  text-align: left;
 }
 .post .post-description .stats .stat-item {
   display: inline-block;
