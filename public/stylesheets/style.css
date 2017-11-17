@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+input {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+
+button {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    color: gray;
+    background: white;
+    border-color: gray;
+}
+
+button:hover {
+    color: black;
+    border-color: black;
+    transition: all 1s;
+}
