@@ -29,9 +29,11 @@
         Comment 
       </div> 
       <div class="post-description"> 
+      
+      {{comment.title}} 
       <span class="glyphicon glyphicon-remove" ng-click="delete(comment)"></span>
       <span class="glyphicon glyphicon-thumbs-up" ng-click="incrementUpvotes(comment)"></span> 
-      {{comment.title}} - upvotes: {{comment.upvotes}} 
+       upvotes: {{comment.upvotes}} 
       </div> 
     </div> </div>
 </body>
