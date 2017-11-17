@@ -28,6 +28,12 @@ router.param('comment', function(req, res, next, id) {
   });
 });
 
+router.delete('/comments/:comment', function(req, res) {
+  console.log("in Delete");
+  req.comment.remove();
+  res.sendStatus(200);
+});
+
 router.get('/comments/:comment', function(req, res) {
   res.json(req.comment);
 });
