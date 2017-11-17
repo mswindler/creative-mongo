@@ -7,6 +7,10 @@ a {
   color: #00B7FF;
 }
 
+span.glyphicon:hover {
+    cursor: pointer;
+}
+
 form {
     color: white;
 }
